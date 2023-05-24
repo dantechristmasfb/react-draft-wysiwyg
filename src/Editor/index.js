@@ -337,7 +337,6 @@ class WysiwygEditor extends Component {
       'customBlockRenderFunc',
       'customDecorators',
       'handlePastedText',
-      'handlePastedImage',
       'customStyleMap',
     ]);
 
