@@ -337,6 +337,7 @@ class WysiwygEditor extends Component {
       'customBlockRenderFunc',
       'customDecorators',
       'handlePastedText',
+      'handlePastedImage',
       'customStyleMap',
     ]);
 
@@ -412,6 +413,7 @@ class WysiwygEditor extends Component {
     } = this.props;
 
     if (handlePastedImageProp) {
+      console.log("files pasted: ", files);
       if (files[0].type.startsWith('image')) {
         const promise = handlePastedImageProp(files[0])
         promise
